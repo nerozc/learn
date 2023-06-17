@@ -1,0 +1,29 @@
+[33mcommit eff105a728f0309d82400db26235e761e277df8f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: nerozc <n3rozc@yandex.ru>
+Date:   Sat Jun 17 22:02:45 2023 +0600
+
+    'initiating'
+
+[1mdiff --git a/1st.py b/1st.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9787fa1[m
+[1m--- /dev/null[m
+[1m+++ b/1st.py[m
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32mimport time[m
+[32m+[m[32mdef strcounter(s):[m
+[32m+[m[32m    for sym in set(s):[m
+[32m+[m[32m        count = 0[m
+[32m+[m[32m        for sub_sym in s:[m
+[32m+[m[32m            if sym == sub_sym:[m
+[32m+[m[32m                count+=1[m
+[32m+[m[32m        print(sym,count)[m
+[32m+[m[32mdef strcounter_new(s):[m
+[32m+[m[32m    syms_counter = {}[m
+[32m+[m[32m    for sym in s:[m
+[32m+[m[32m        syms_counter[sym] = syms_counter.get(sym,0) + 1[m
+[32m+[m[32m    for sym, count in syms_counter.items():[m
+[32m+[m[32m        print(sym,count)[m
+[32m+[m[32mstrcounter('abcc')[m
+[32m+[m[32mstrcounter_new('abc')[m
+\ No newline at end of file[m
